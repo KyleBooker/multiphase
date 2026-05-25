@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# NGSolve / simulation output
+*.vtk
+*.vtu
+*.pvd
+*.dat
+*.log
+
+# IDE and OS
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db

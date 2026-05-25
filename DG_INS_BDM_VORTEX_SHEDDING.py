@@ -35,7 +35,7 @@ import matplotlib.pyplot as plt
 Verbose_Mode        = 1     #   0/1 == Yes/No -- Outputs solution information to terminal
 Polynomial_Order    = 2  #   Int           -- Order of approximation polynomials
 Initial_Mesh_Size   = 1/4   #   Float         -- Initial mesh Size
-No_Refinments       = 3     #   Int           -- Number of times to refine the mesh
+No_Refinements      = 3     #   Int           -- Number of times to refine the mesh
 Time_Step           = 0.001 #   Float         -- Size of the time step to take
 No_Time_Solutions   = 1000   #   Int           -- Number of transient solutions
 nu                  = 0.001   #   Float         -- Kinematic viscosity

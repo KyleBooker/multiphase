@@ -1,3 +1,23 @@
+"""
+
+This code tests the validity of a Taylor-Hood element space for the
+Incompressible Navier-Stokes equations by solving the following equation:
+
+u_t + div(u x u) - nu*div(grad(u)) + grad(p) = f
+div(u) = 0
+
+with exact solution u = (sin(pi*x)*sin(pi*y), cos(pi*x)*cos(pi*y)),
+p = sin(pi*x)*cos(pi*y) on the unit square.
+
+This file was created by Kyle Booker and James Lowman under the supervision of
+Sander Rhebergen and Nasser Abukhdeir at the University of Waterloo in 2019.
+
+This program is designed and operated using the NGSolve Finite Element Package.
+www.ngsolve.org
+
+"""
+
+from ngsolve import *
 from netgen.geom2d import SplineGeometry
 from netgen.geom2d import unit_square
 from math import pi
@@ -6,7 +26,7 @@ import time
 Verbose_Mode        = 1     #   0/1 == Yes/No -- Outputs solution information to terminal
 Polynomial_Order    = 3  #   Int           -- Order of approximation polynomials
 Initial_Mesh_Size   = 1   #   Float         -- Initial mesh Size
-No_Refinments       = 7   #   Int           -- Number of times to refine the mesh
+No_Refinements      = 7   #   Int           -- Number of times to refine the mesh
 Time_Step           = 1e-10  #   Float         -- Size of the time step to take
 No_Time_Solutions   = 1    #   Int           -- Number of transient solutions
 nu                  = 10e-5   #   Float         -- Kinematic viscosity
@@ -148,7 +168,7 @@ def Solve_Stokes():
     store.append ( (X.ndof, mesh.ne, err_u, err_p, err_div) )
 
 
-for i in range(No_Refinments):
+for i in range(No_Refinements):
 
     # Refine the mesh
     if i != 1:

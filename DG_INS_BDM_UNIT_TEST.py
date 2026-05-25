@@ -31,7 +31,7 @@ start_time = time.time()
 Verbose_Mode        = 1     #   0/1 == Yes/No -- Outputs solution information to terminal
 Polynomial_Order    = 3     #   Int           -- Order of approximation polynomials
 Initial_Mesh_Size   = 1   #   Float         -- Initial mesh Size
-No_Refinments       = 6     #   Int           -- Number of times to refine the mesh
+No_Refinements      = 6     #   Int           -- Number of times to refine the mesh
 Time_Step           = 1e-10  #   Float         -- Size of the time step to take
 No_Time_Solutions   = 1    #   Int           -- Number of transient solutions
 nu                  = 1   #   Float         -- Kinematic viscosity
@@ -360,7 +360,7 @@ def SolveBVP_NavierStokes():
 
 vtk = VTKOutput(ma=mesh,coefs=[UN.components[0][0], UN.components[0][1], UN.components[0], UN.components[1]],names=["HorizontalVelocity", "VerticalVelocity", "VelocityMagnitude", "Pressure"],filename="square",subdivision=3)
 
-for i in range(No_Refinments):
+for i in range(No_Refinements):
 
     # Refine the mesh
     if i != 1:

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated thesis."
+authors:
+  - family-names: Booker
+    given-names: Kyle
+title: "H(div)-Conforming Discontinuous Galerkin Methods for Multiphase Flow"
+version: 1.0.0
+date-released: 2021-01-01
+url: "https://github.com/KyleBooker/hdiv-dg-multiphase-flow"
+preferred-citation:
+  type: thesis
+  authors:
+    - family-names: Booker
+      given-names: Kyle
+  title: "H(div)-Conforming Discontinuous Galerkin Methods for Multiphase Flow"
+  institution:
+    name: "University of Waterloo"
+  year: 2021
+  thesis-type: "Master of Mathematics"
